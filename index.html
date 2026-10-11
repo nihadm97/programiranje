@@ -1,338 +1,87 @@
 <!DOCTYPE html>
-<html lang="bs">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Nauči C++ za osnovnu školu</title>
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
 
 <div class="container mt-3">
 
   <div class="mb-3">
-    <label for="exerciseSelector" class="form-label">
-      Odaberi zadatak:
-    </label>
-
-    <select
-      id="exerciseSelector"
-      class="form-select"
-      onchange="loadExercise()"
-    >
-
-      <optgroup label="Osnovni zadaci">
-        <option value="1">Zadatak 1: Cijeli broj</option>
-        <option value="2">Zadatak 2: Decimalni broj</option>
-        <option value="3">Zadatak 3: Cijeli broj korisnika</option>
-        <option value="4">Zadatak 4: Decimalni broj korisnika</option>
-        <option value="5">Zadatak 5*: Broj više puta</option>
-        <option value="6">Zadatak 6*: Dvostruki broj</option>
-        <option value="7">Zadatak 7**: Formula</option>
-        <option value="8">Zadatak 8: Hello World</option>
-        <option value="9">Zadatak 9: Gradovi</option>
-        <option value="10">Zadatak 10: Jela</option>
-        <option value="11">Zadatak 11: Rijeke</option>
-        <option value="12">Zadatak 12*: Ponavljanje riječi</option>
-        <option value="13">Zadatak 13: Riječ korisnika</option>
-        <option value="14">Zadatak 14: Riječ korisnika više puta</option>
-        <option value="15">Zadatak 15: Treće slovo riječi</option>
-        <option value="16">Zadatak 16: Prvo slovo riječi</option>
-        <option value="17">Zadatak 17: Dužina riječi</option>
-        <option value="18">Zadatak 18**: Posljednje slovo riječi</option>
-      </optgroup>
-
-      <optgroup label="Osnovni uslovi i nizovi">
-        <option value="19">Zadatak 19: Broj veći od 9</option>
-        <option value="20">Zadatak 20: Broj različit od 5</option>
-        <option value="21">Zadatak 21: Broj jednak 11</option>
-        <option value="22">Zadatak 22**: Riječ duža od 10 slova</option>
-        <option value="23">Zadatak 23: Niz cijelih brojeva</option>
-        <option value="24">Zadatak 24*: Niz decimalnih brojeva</option>
-        <option value="25">Zadatak 25*: Niz riječi</option>
-      </optgroup>
-
-      <optgroup label="1.5 Razgranate programske strukture">
-        <option value="26">Zadatak 26: Jakna</option>
-        <option value="27">Zadatak 27: Ulaznica za bazen</option>
-        <option value="28">Zadatak 28: Baterija mobitela</option>
-        <option value="29">Zadatak 29*: Težina paketa</option>
-        <option value="30">Zadatak 30*: Broj završava cifrom 5</option>
-        <option value="31">Zadatak 31*: Djeljivost sa 6</option>
-        <option value="32">Zadatak 32: Zabranjena riječ</option>
-        <option value="33">Zadatak 33*: Šifra ormarića</option>
-        <option value="34">Zadatak 34*: Kupovina ulaznice</option>
-        <option value="35">Zadatak 35**: Najveći od tri broja</option>
-      </optgroup>
-
-      <optgroup label="1.6 Ciklične programske strukture">
-        <option value="36">Zadatak 36: Nadimak četiri puta</option>
-        <option value="37">Zadatak 37*: Ispis Bum</option>
-        <option value="38">Zadatak 38: Brojevi od 2 do x</option>
-        <option value="39">Zadatak 39: Odbrojavanje</option>
-        <option value="40">Zadatak 40*: Višekratnici broja 3</option>
-        <option value="41">Zadatak 41*: Zbir do broja -1</option>
-        <option value="42">Zadatak 42*: Broj mjerenja</option>
-        <option value="43">Zadatak 43*: Unos lozinke</option>
-        <option value="44">Zadatak 44**: Najmanji uneseni broj</option>
-      </optgroup>
-
-      <optgroup label="1.7 Primjena programskih struktura">
-        <option value="45">Zadatak 45*: Neparni brojevi</option>
-        <option value="46">Zadatak 46*: Djeljivost sa 4 i 6</option>
-        <option value="47">Zadatak 47**: Brojevi od 20 do 50</option>
-        <option value="48">Zadatak 48**: Zbir parnih brojeva</option>
-        <option value="49">Zadatak 49**: Uspjeh na testu</option>
-        <option value="50">Zadatak 50**: Autobuske stanice</option>
-        <option value="51">Zadatak 51**: Posudba knjiga</option>
-        <option value="52">Zadatak 52**: Humanitarna akcija</option>
-      </optgroup>
-
+    <label for="exerciseSelector" class="form-label">Odaberi zadatak:</label>
+    <select id="exerciseSelector" class="form-select" onchange="loadExercise()">
+      <option value="1">🟢 Zadatak 1: Cijeli broj</option>
+      <option value="2">🟢 Zadatak 2: Decimalni broj</option>
+      <option value="3">🟢 Zadatak 3: Cijeli broj korisnika</option>
+      <option value="4">🟢 Zadatak 4: Decimalni broj korisnika</option>
+      <option value="5">🟠 Zadatak 5: Broj više puta</option>
+      <option value="6">🟠 Zadatak 6: Dvostruki broj</option>
+      <option value="7">🟠 Zadatak 7: Formula</option>
+      <option value="8">🟢 Zadatak 8: Hello World</option>
+      <option value="9">🟢 Zadatak 9: Automobili</option>
+      <option value="10">🟢 Zadatak 10: Voćke</option>
+      <option value="11">🟢 Zadatak 11: Serije</option>
+      <option value="12">🟠 Zadatak 12: Ponavljanje riječi</option>
+      <option value="13">🟢 Zadatak 13: Riječ korisnika</option>
+      <option value="14">🟠 Zadatak 14: Riječ korisnika više puta</option>
+      <option value="15">🟠 Zadatak 15: Treće slovo riječi</option>
+      <option value="16">🟠 Zadatak 16: Prvo slovo riječi</option>
+      <option value="17">🟠 Zadatak 17: Dužina riječi</option>
+      <option value="18">🔴 Zadatak 18: Zadnje slovo riječi</option>
+      <option value="19">🟠 Zadatak 19: Broj veći od 9</option>
+      <option value="20">🟠 Zadatak 20: Broj različit od 5</option>
+      <option value="21">🟠 Zadatak 21: Broj jednak 11</option>
+      <option value="22">🔴 Zadatak 22: Riječ duža od 10</option>
+      <option value="23">🟠 Zadatak 23: Niz brojevi</option>
+      <option value="24">🟠 Zadatak 24: Niz brojevi drugi primjer</option>
+      <option value="25">🟠 Zadatak 25: Niz riječi</option>
     </select>
   </div>
 
-  <div id="exerciseDescription" class="alert alert-info"></div>
+  <div id="exerciseDescription" class="alert alert-info">
+    Odaberi zadatak kako bi pročitao opis zadatka.
+  </div>
 
-  <iframe
-    src="https://onecompiler.com/cpp"
-    width="100%"
-    height="600"
-    title="C++ uređivač"
-  ></iframe>
+  <iframe src="https://onecompiler.com/cpp" width="100%" height="600px"></iframe>
 
 </div>
 
 <script>
 const exercises = {
-  1: {
-    description: "Napiši program koji ispisuje cijeli broj 9."
-  },
-
-  2: {
-    description: "Napiši program koji ispisuje decimalni broj 6.6."
-  },
-
-  3: {
-    description: "Napiši program koji ispisuje cijeli broj unesen od korisnika."
-  },
-
-  4: {
-    description: "Napiši program koji ispisuje decimalni broj unesen od korisnika."
-  },
-
-  5: {
-    description: "Napiši program koji tri puta ispisuje decimalni broj unesen od korisnika."
-  },
-
-  6: {
-    description: "Napiši program koji ispisuje cijeli broj unesen od korisnika pomnožen sa dva."
-  },
-
-  7: {
-    description: "Korisnik unosi decimalni broj x. Program ispisuje vrijednost izraza 7x - 2."
-  },
-
-  8: {
-    description: 'Napiši program koji ispisuje "Hello, World!".'
-  },
-
-  9: {
-    description: "Ispiši nazive Sarajevo, Mostar, Tuzla, Zenica i Bihać jedno do drugog, odvojene razmakom."
-  },
-
-  10: {
-    description: "Ispiši nazive ćevapi, burek, dolma, pita i baklava jedno do drugog, odvojene zarezima."
-  },
-
-  11: {
-    description: "Ispiši nazive Drina, Bosna, Neretva, Vrbas i Sana jedno ispod drugog."
-  },
-
-  12: {
-    description: 'Napiši program koji pet puta ispisuje "BOSNA".'
-  },
-
-  13: {
-    description: "Napiši program koji ispisuje riječ koju je unio korisnik."
-  },
-
-  14: {
-    description: "Napiši program koji tri puta ispisuje riječ koju je unio korisnik."
-  },
-
-  15: {
-    description: "Za riječ unesenu od korisnika ispiši njeno treće slovo."
-  },
-
-  16: {
-    description: "Za riječ unesenu od korisnika ispiši njeno prvo slovo."
-  },
-
-  17: {
-    description: "Za riječ unesenu od korisnika ispiši koliko slova ima."
-  },
-
-  18: {
-    description: "Za riječ unesenu od korisnika ispiši njeno posljednje slovo."
-  },
-
-  19: {
-    description: "Korisnik unosi cijeli broj. Program provjerava je li uneseni broj veći od 9."
-  },
-
-  20: {
-    description: "Korisnik unosi cijeli broj. Program provjerava je li uneseni broj različit od 5."
-  },
-
-  21: {
-    description: "Korisnik unosi cijeli broj. Program provjerava je li uneseni broj jednak broju 11."
-  },
-
-  22: {
-    description: "Korisnik unosi riječ. Program provjerava ima li unesena riječ više od 10 slova."
-  },
-
-  23: {
-    description: "Napravi niz brojeva 5, 9, 10, 11, 13 i 21, a zatim ispiši prvi element niza."
-  },
-
-  24: {
-    description: "Napravi niz brojeva 2.5, 1.2, 10, 11, 13.1 i 21, a zatim ispiši element na indeksu 2."
-  },
-
-  25: {
-    description: 'Napravi niz riječi "Patka", "Guska" i "Kokoš", a zatim iz niza ispiši riječ "Kokoš".'
-  },
-
-  // 1.5 RAZGRANATE PROGRAMSKE STRUKTURE
-
-  26: {
-    description: 'Korisnik unosi temperaturu zraka. Ako je temperatura manja od ili jednaka 10 °C, program ispisuje "Potrebna je jakna.", a u suprotnom "Jakna nije potrebna.".'
-  },
-
-  27: {
-    description: "Korisnik unosi broj godina. Ako ima manje od 12 godina, cijena ulaznice za bazen iznosi 3 KM, a u suprotnom 6 KM."
-  },
-
-  28: {
-    description: 'Korisnik unosi postotak napunjenosti baterije. Program ispisuje je li baterija slabo napunjena, dovoljno napunjena ili potpuno napunjena.'
-  },
-
-  29: {
-    description: "Korisnik unosi težinu paketa. Program ispisuje je li paket lakši od 2 kg, teži od 10 kg ili se njegova težina nalazi između 2 kg i 10 kg."
-  },
-
-  30: {
-    description: "Korisnik unosi cijeli broj, a program provjerava završava li taj broj cifrom 5."
-  },
-
-  31: {
-    description: "Korisnik unosi cijeli broj, a program provjerava je li taj broj djeljiv sa 6."
-  },
-
-  32: {
-    description: 'Korisnik unosi riječ. Ako je riječ različita od riječi "STOP", ispisuje se "Unos je prihvaćen.", a u suprotnom "Unos nije prihvaćen.".'
-  },
-
-  33: {
-    description: 'Korisnik unosi šifru školskog ormarića. Ispravne šifre su 4321 i 9876. Program ispisuje je li unesena šifra tačna.'
-  },
-
-  34: {
-    description: "Korisnik unosi cijenu ulaznice i iznos novca koji ima. Ako ima dovoljno novca, program ispisuje koliko će mu novca ostati, a u suprotnom koliko mu novca nedostaje."
-  },
-
-  35: {
-    description: "Korisnik unosi tri različita cijela broja, a program ispisuje najveći uneseni broj."
-  },
-
-  // 1.6 CIKLIČNE PROGRAMSKE STRUKTURE
-
-  36: {
-    description: "Korisnik unosi svoj nadimak, a program ga ispisuje četiri puta, svaki put u novom redu."
-  },
-
-  37: {
-    description: 'Korisnik unosi broj, a program ispisuje "Bum" toliko puta u istom redu. Naprimjer, za uneseni broj 3 ispisuje se: Bum Bum Bum.'
-  },
-
-  38: {
-    description: "Korisnik unosi pozitivan cijeli broj x, a program ispisuje sve brojeve od 2 do x."
-  },
-
-  39: {
-    description: "Korisnik unosi pozitivan cijeli broj, a program odbrojava od unesenog broja do 0."
-  },
-
-  40: {
-    description: "Korisnik unosi pozitivan cijeli broj, a program ispisuje sve pozitivne višekratnike broja 3 manje od ili jednake unesenom broju."
-  },
-
-  41: {
-    description: "Korisnik unosi cijele brojeve, a program ih sabira sve dok ne unese broj -1. Nakon toga ispisuje se ukupan zbir."
-  },
-
-  42: {
-    description: "Korisnik unosi rezultate mjerenja sve dok ne unese broj 999. Program zatim ispisuje koliko je mjerenja uneseno."
-  },
-
-  43: {
-    description: 'Korisnik unosi lozinku sve dok ne unese broj 4321. Nakon tačnog unosa ispisuje se "Pristup odobren.".'
-  },
-
-  44: {
-    description: "Korisnik unosi pozitivne brojeve sve dok ne unese broj 0. Program zatim ispisuje najmanji uneseni broj."
-  },
-
-  // 1.7 PRIMJENA PROGRAMSKIH STRUKTURA
-
-  45: {
-    description: "Korisnik unosi pozitivan cijeli broj, a program ispisuje sve neparne brojeve manje od ili jednake unesenom broju."
-  },
-
-  46: {
-    description: "Korisnik unosi pozitivan cijeli broj, a program ispisuje sve brojeve manje od njega koji su istovremeno djeljivi sa 4 i sa 6."
-  },
-
-  47: {
-    description: "Korisnik unosi brojeve sve dok ne unese broj -1. Program zatim ispisuje koliko je unesenih brojeva bilo između 20 i 50."
-  },
-
-  48: {
-    description: "Korisnik unosi brojeve sve dok ne unese broj 0. Program sabira samo parne brojeve i na kraju ispisuje njihov zbir."
-  },
-
-  49: {
-    description: "Korisnik unosi broj učenika/ca, a zatim broj bodova svakog učenika/ce. Program ispisuje koliko ih je osvojilo manje od 50 bodova, a koliko 50 ili više bodova."
-  },
-
-  50: {
-    description: "Korisnik unosi broj autobuskih stanica. Za svaku stanicu unosi broj putnika koji ulaze u autobus sve dok ne unese broj 0. Program ispisuje ukupan broj putnika za svaku stanicu i stanicu na kojoj je ušlo najviše putnika."
-  },
-
-  51: {
-    description: "Korisnik unosi broj dana. Za svaki dan unosi broj posuđenih knjiga sve dok ne unese broj -1. Program ispisuje ukupan broj posuđenih knjiga za svaki dan i dan s najvećim brojem posudbi."
-  },
-
-  52: {
-    description: "Korisnik unosi broj odjeljenja koja učestvuju u humanitarnoj akciji. Za svako odjeljenje unosi pojedinačne iznose donacija sve dok ne unese broj 0. Program ispisuje ukupan iznos svakog odjeljenja i redni broj odjeljenja koje je prikupilo najviše novca."
-  }
+  1: { description: 'Napiši program koji ispisuje cijeli broj 9.' },
+  2: { description: 'Napiši program koji ispisuje decimalni broj 6.6.' },
+  3: { description: 'Napiši program koji ispisuje cijeli broj unesen od korisnika.' },
+  4: { description: 'Napiši program koji ispisuje decimalni broj unesen od korisnika.' },
+  5: { description: 'Napiši program koji ispisuje 3 puta decimalni broj unesen od korisnika.' },
+  6: { description: 'Napiši program koji ispisuje cijeli broj unesen od korisnika pomnožen sa dva.' },
+  7: { description: 'Napiši program u kojem korisnik unosi decimalni broj x i ispisuje se vrijednost izraza 7x-2.' },
+  8: { description: 'Napiši program koji ispisuje "Hello, World!".' },
+  9: { description: 'Napiši program koji ispisuje: BMW Audi Mercedes Peugeot Fiat.' },
+  10: { description: 'Napiši program koji ispisuje voćke jedno do drugog.' },
+  11: { description: 'Napiši program koji ispisuje nazive serija bez razmaka.' },
+  12: { description: 'Napiši program koji ispisuje riječ SEŠ 5 puta.' },
+  13: { description: 'Napiši program koji ispisuje riječ koju je unijeo korisnik.' },
+  14: { description: 'Napiši program koji ispisuje 3 puta riječ koju je unijeo korisnik.' },
+  15: { description: 'Za unesenu riječ korisnika ispisati njeno treće slovo.' },
+  16: { description: 'Za unesenu riječ korisnika ispisati njeno prvo slovo.' },
+  17: { description: 'Za unesenu riječ korisnika ispisati koliko je duga (koliko slova ima).' },
+  18:{ description: 'Za unesenu riječ korisnika ispisati njeno zadnje slovo.' },
+  19:{ description: 'Za uneseni cijeli broj korisnika provjeriti da li je veći od broja 9.' },
+  20:{ description: 'Za uneseni cijeli broj korisnika provjeriti da li je različit od 5.' },
+  21:{ description: 'Za uneseni cijeli broj korisnika provjeriti da li je jednak broju 11.' },
+  22:{ description: 'Za unesenu riječ korisnika provjeriti da li ima više od 10 slova.' },
+  23:{ description: 'Napiši program koji sadrži niz brojeva 5, 9, 10, 11, 13, 21. Ispiši prvi element niza.' },
+  24:{ description: 'Napiši program koji sadrži niz brojeva 2.5, 1.2, 10, 11, 13.1, 21. Ispiši element na indeksu 2.' },
+  25:{ description: 'Napiši program koji sadrži niz riječi Patka, Guska, Kokoš. Ispiši riječ Kokoš iz niza.' }
 };
 
 function loadExercise() {
   const selected = document.getElementById("exerciseSelector").value;
-
-  document.getElementById("exerciseDescription").textContent =
-    exercises[selected].description;
+  document.getElementById("exerciseDescription").textContent = exercises[selected].description;
 }
-
-loadExercise();
 </script>
 
 </body>
